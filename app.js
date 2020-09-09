@@ -25,6 +25,7 @@ $(document).ready(function() {
 
 const children = [];
 var raiz;
+const url_node = "https://201503378.loca.lt/";
 class Nodo {
     constructor(token, valor, fila, columna, idNodo) {
         this.token = token;
@@ -40,10 +41,10 @@ class Nodo {
 }
 
 function construirarbol() {
-    //var cadena = "hola hola";
-    //var xmlhttp = new XMLHttpRequest();
-    //xmlhttp.open("POST", 'http://192.168.1.22:3000/escibir/' + cadena, true);
-    //xmlhttp.send();
+    var cadena = "hola hola";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", url_node + 'escibir/' + cadena, true);
+    xmlhttp.send();
 
 
     //    var xhr = new XMLHttpRequest();
@@ -72,5 +73,5 @@ function construirarbol() {
 
     xhr.overrideMimeType('text/plain; charset=x-user-defined');
     xhr.send() */
-    window.open('http://192.168.1.22:3000/AST', '_blank');
+    window.open(url_node + '/AST', '_blank');
 }
