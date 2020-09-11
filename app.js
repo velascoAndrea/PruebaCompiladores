@@ -53,13 +53,13 @@ function construirarbol(raiz) {
     var formData = new FormData();
     formData.append("cadena", cadena);
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", url_node + 'escribir', true);
+    xmlhttp.open("POST", url_node + 'escribir', false);
     xmlhttp.send(formData);
 
 
     //console.log(cadena);
 
-    // window.open(url_node + 'AST', '_blank');
+    window.open(url_node + 'AST', '_blank');
 }
 
 function generar(raiz) {
