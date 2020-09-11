@@ -53,7 +53,7 @@ function construirarbol(raiz) {
     var formData = new FormData();
     formData.append("cadena", cadena);
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", url_node + 'escribir/', false);
+    xmlhttp.open("POST", url_node + 'escribir', false);
     xmlhttp.send(formData);
 
 
